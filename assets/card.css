@@ -1,12 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
-    color: #ecf0f1;
+    background: linear-gradient(to right, #2c3e50, #7b1fa2);
+    color: #f5f5f5;
     margin: 0;
     padding: 0;
 }
-
-
 
 .container {
     text-align: center;
@@ -21,7 +19,7 @@ h1 {
     margin: 20px 0;
     font-size: 2.5em;
     letter-spacing: 1px;
-    color: #ecf0f1;
+    color: #f5f5f5;
 }
 
 #imgheader {
@@ -45,9 +43,9 @@ h1 {
 }
 
 .card {
-    background-color: #34495e;
+    background-color: #4a148c;
     width: 250px;
-    height: 490px;
+    height: 510px;
     padding: 20px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -88,7 +86,7 @@ h1 {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background: linear-gradient(744deg, #a1bc9c, #1abc9c 60%, #00ddeb);
+    background: linear-gradient(744deg, #d81b60, #8e24aa 60%, #5e35b1);
     border-radius: 40%;
     animation: wave 55s infinite linear;
     z-index: 0;
@@ -120,7 +118,7 @@ h1 {
     top: 2.5em;
     left: 0;
     right: 0;
-    color: rgb(255, 255, 255);
+    color: #f5f5f5;
     font-weight: 600;
     z-index: 2;
 }
@@ -137,13 +135,13 @@ h1 {
 
 .card .price {
     font-size: 1.8em;
-    color: #ecf0f1;
+    color: #f5f5f5;
     margin-top: 10px;
     z-index: 2;
 }
 
 button {
-    --color: #1abc9c;
+    --color: #d81b60;
     font-family: inherit;
     display: inline-block;
     width: 8em;
@@ -187,7 +185,7 @@ button:hover:before {
 }
 
 button:active:before {
-    background: #1abc9c;
+    background: #d81b60;
     transition: background 0s;
 }
 
@@ -195,7 +193,7 @@ footer {
     text-align: center;
     padding: 10px 0;
     background-color: #2c3e50;
-    color: #ecf0f1;
+    color: #f5f5f5;
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -218,19 +216,19 @@ footer {
 }
 
 .modal-content {
-    background-color: #34495e;
+    background-color: #4a148c;
     margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     max-width: 500px;
     border-radius: 8px;
-    color: #ecf0f1;
+    color: #f5f5f5;
     position: relative;
 }
 
 .close-button {
-    color: #ecf0f1;
+    color: #f5f5f5;
     position: absolute;
     top: 10px;
     right: 20px;
@@ -241,14 +239,12 @@ footer {
 
 .close-button:hover,
 .close-button:focus {
-    color: #e74c3c;
+    color: #e57373;
     text-decoration: none;
     cursor: pointer;
 }
 
-
-
-#imgfooter{
+#imgfooter {
     width: 12px !important;
     height: 12px;
     padding: auto;
