@@ -1,255 +1,363 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+/* Root Variables */
+:root {
+    --primary-color: #8b0000;
+    --secondary-color: #ff6f61;
+    --background-gradient: linear-gradient(to right, #000000, #8b0000);
+    --text-color: #ffffff;
+    --card-bg-color: rgba(255, 255, 255, 0.1);
+    --modal-bg-color: rgba(0, 0, 0, 0.8);
+    --border-radius: 16px;
+    --box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    --font-family: 'Raleway', sans-serif;
+}
+
+/* Global Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #2c3e50, #8b0000);
-    color: #f5f5f5;
     margin: 0;
     padding: 0;
+    font-family: var(--font-family);
+    background: var(--background-gradient);
+    color: var(--text-color);
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+
+/* Parallax Background */
+.parallax-bg {
+    background: linear-gradient(to bottom, #000000, #8b0000);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateZ(-1px) scale(2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .container {
-    text-align: center;
-    padding: 20px;
-}
-
-h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin: 20px 0;
-    font-size: 2.5em;
-    letter-spacing: 1px;
-    color: #f5f5f5;
-}
-
-#imgheader {
-    width: 50px;
-    height: 50px;
-}
-
-#imgfooter {
-    width: 20px;
-    height: 20px;
-}
-
-.pricing-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-}
-
-.card {
-    background-color: #ffffff;
-    width: 250px;
-    height: 510px;
-    padding: 20px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    border-radius: 16px;
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
+    padding: 40px 20px;
     position: relative;
-    overflow: hidden;
-    border: 1px solid #ff6f61;
-}
-
-.card::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 111, 97, 0.1);
-    opacity: 0;
-    transition: opacity 0.3s;
     z-index: 1;
 }
 
-.card:hover::before {
-    opacity: 1;
+/* Header Styles */
+header {
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeInDown 1s ease;
+}
+
+#logo {
+    width: 60px;
+    height: 60px;
+    animation: pulse 2s infinite;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+/* Pricing Section */
+.pricing-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 30px;
+}
+
+/* Adjusted card to have consistent height */
+.card {
+    background: var(--card-bg-color);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    min-height: 450px;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-15px);
+    box-shadow: var(--box-shadow);
 }
 
-.wave {
+.card::before {
+    content: '';
     position: absolute;
-    width: 540px;
-    height: 700px;
-    opacity: 0.6;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background: linear-gradient(744deg, #ff6f61, #8b0000 60%, #ffab91);
-    border-radius: 40%;
-    animation: wave 55s infinite linear;
-    z-index: 0;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, transparent 0%, rgba(255, 255, 255, 0.05) 100%);
+    transform: rotate(45deg);
 }
 
-.wave:nth-child(2) {
-    top: 210px;
-    animation-duration: 50s;
-}
-
-.wave:nth-child(3) {
-    top: 210px;
-    animation-duration: 45s;
-}
-
-@keyframes wave {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-.infotop {
+.card-header {
     text-align: center;
-    font-size: 20px;
-    position: relative;
-    top: 2.5em;
-    left: 0;
-    right: 0;
-    color: #333;
-    font-weight: 600;
-    z-index: 2;
+    margin-bottom: 20px;
 }
 
-.infotop h2 {
-    margin-bottom: 15px;
-    color: #8b0000;
-}
-
-.card p {
-    margin: 10px 0;
-    font-size: 1em;
-    z-index: 2;
-    color: #555;
-}
-
-.card .price {
+.card-header h2 {
     font-size: 1.8em;
-    color: #8b0000;
-    margin-top: 10px;
-    z-index: 2;
-}
-
-button {
-    --color: #8b0000;
-    font-family: inherit;
-    display: inline-block;
-    width: 8em;
-    height: 2.6em;
-    line-height: 2.5em;
-    margin: 20px;
-    position: relative;
-    overflow: hidden;
-    border: 2px solid var(--color);
-    transition: color .5s;
-    z-index: 2;
-    font-size: 17px;
-    border-radius: 6px;
-    font-weight: 500;
-    color: var(--color);
-}
-
-button:before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background: #8b0000;
-    height: 150px;
-    width: 200px;
-    border-radius: 50%;
-}
-
-button:hover {
+    margin-bottom: 10px;
     color: #fff;
 }
 
-button:before {
-    top: 100%;
-    left: 100%;
-    transition: all .7s;
+.card-header .price {
+    font-size: 1.5em;
+    color: var(--secondary-color);
 }
 
-button:hover:before {
-    top: -30px;
-    left: -30px;
+.card-header .price span {
+    font-size: 0.8em;
+    color: #ddd;
 }
 
-button:active:before {
-    background: #ff6f61;
-    transition: background 0s;
+.card-body {
+    margin-bottom: 20px;
 }
 
+.card-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card-body ul li {
+    font-size: 1em;
+    margin: 10px 0;
+    color: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.card-body ul li i {
+    color: var(--secondary-color);
+    margin-right: 10px;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+/* Glitch Button Styles */
+.btn-glitch {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "VT323", monospace;
+    font-size: 1.2em;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.btn-glitch .text,
+.btn-glitch .decoration {
+    display: inline-block;
+}
+
+.btn-glitch .decoration {
+    margin-left: 10px;
+    transition: transform 0.2s;
+}
+
+.btn-glitch:hover .decoration {
+    transform: translateX(5px);
+}
+
+.btn-glitch:before,
+.btn-glitch:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: var(--secondary-color);
+    z-index: -1;
+    transition: transform 0.3s;
+}
+
+.btn-glitch:before {
+    transform: translate(-100%, 0);
+}
+
+.btn-glitch:after {
+    transform: translate(100%, 0);
+}
+
+.btn-glitch:hover:before {
+    transform: translate(0, 0);
+}
+
+.btn-glitch:hover:after {
+    transform: translate(0, 0);
+}
+
+.btn-glitch:active {
+    color: var(--secondary-color);
+}
+
+/* Footer Styles */
 footer {
     text-align: center;
-    padding: 10px 0;
-    background-color: #2c3e50;
-    color: #f5f5f5;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    font-size: 0.9em;
-    z-index: -2;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: relative;
 }
 
-/* Modal */
+#footer-logo {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
+/* Modal Styles */
 .modal {
     display: none;
     position: fixed;
-    z-index: 5;
+    z-index: 100;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
+    background-color: var(--modal-bg-color);
+    backdrop-filter: blur(5px);
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding-top: 60px;
 }
 
 .modal-content {
     background-color: #ffffff;
     margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 500px;
-    border-radius: 8px;
-    color: #333;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    width: 90%;
+    max-width: 600px;
     position: relative;
+    color: #333;
 }
 
 .close-button {
-    color: #333;
+    color: #aaa;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 15px;
+    right: 25px;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
 }
 
-.close-button:hover,
-.close-button:focus {
-    color: #ff6f61;
-    text-decoration: none;
-    cursor: pointer;
+.close-button:hover {
+    color: var(--secondary-color);
 }
 
-#imgfooter {
-    width: 12px !important;
-    height: 12px;
-    padding: auto;
-    z-index: -2;
+/* Modal Contact Button */
+.modal-contact-button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    font-family: var(--font-family);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    margin-top: 20px;
+}
+
+.modal-contact-button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.modal-contact-button:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+    .pricing-cards {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on medium screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .pricing-cards {
+        grid-template-columns: 1fr; /* One column on small screens */
+    }
+}
+
+/* Keyframes */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+    70% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+
+/* Modal Contact Button */
+.modal-contact-button {
+    background: var(--primary-color);
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    font-family: var(--font-family);
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s;
+    margin-top: 20px;
+}
+
+.modal-contact-button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+.modal-contact-button:active {
+    transform: translateY(1px);
 }

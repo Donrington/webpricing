@@ -1,149 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        
-        <title>Website Pricing Cards | Professional Web Design Services</title>
-        
-        <meta name="description" content="Explore our comprehensive website pricing options, including static websites, e-commerce solutions, corporate websites with CMS, and portfolios. Tailored web design services to meet your business needs.">
-        <meta name="keywords" content="website pricing, web design, static website, e-commerce, corporate website, CMS, portfolio, web development, responsive design, SEO services">
-        <meta name="author" content="CyberSage">
-        
-        <link rel="canonical" href="https://www.cybersagee.com">
-        <link rel="icon" href="assets/circle2.png" type="image/png">
-        <link rel="stylesheet" href="assets/card.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-        
-        <!-- Open Graph Meta Tags -->
-        <meta property="og:title" content="Website Pricing Cards | Professional Web Design Services">
-        <meta property="og:description" content="Explore our comprehensive website pricing options, including static websites, e-commerce solutions, corporate websites with CMS, and portfolios. Tailored web design services to meet your business needs.">
-        <meta property="og:image" content="https://www.cybersagee.com/assets/circle2.png">
-        <meta property="og:url" content="https://www.cybersagee.com">
-        <meta property="og:type" content="website">
-        
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="Website Pricing Cards | Professional Web Design Services">
-        <meta name="twitter:description" content="Explore our comprehensive website pricing options, including static websites, e-commerce solutions, corporate websites with CMS, and portfolios. Tailored web design services to meet your business needs.">
-        <meta name="twitter:image" content="https://www.cybersagee.com/assets/circle2.png">
-    </head>
-    
+<head>
+    <!-- Essential Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Pricing | CyberSage Web Design Services</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover our modern web design pricing options tailored to your business needs. Offering Landing Pages, Portfolios, E-commerce Solutions, and more.">
+    <meta name="keywords" content="web design, pricing, landing page, portfolio, e-commerce, responsive design, modern web development, SEO services">
+    <meta name="author" content="CyberSage">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Website Pricing | CyberSage Web Design Services">
+    <meta property="og:description" content="Discover our modern web design pricing options tailored to your business needs. Offering Landing Pages, Portfolios, E-commerce Solutions, and more.">
+    <meta property="og:image" content="assets/og-image.png">
+    <meta property="og:url" content="https://www.cybersagee.com">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/circle2.png" type="image/png">
+
+    <!-- Google Fonts -->
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/card.css">
+</head>
 <body>
+
+ 
+    <!-- Container -->
     <div class="container">
-        <h1><img src="assets/circle2.png" alt="" id="imgheader" class="fa-fade"> Website Pricing</h1>
-        <div class="pricing-cards">
-    
-            <div class="card e-card playing" onclick="showDetails('landing-page')">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="infotop">
-                    <h2>Landing Page</h2>
-                    <p>Single page</p>
-                    <p>Basic SEO</p>
-                    <p>Responsive Design</p>
-                    <p>Lead Capture Form</p>
-                    <p class="price">&#8358;80,000 ($50)</p>
-                    <button>View Details</button>
+
+        
+        <!-- Header -->
+        <header>
+            <img src="assets/circle2.png" alt="CyberSage Logo" id="logo" class="fa-fade">
+            <h1>Website Pricing</h1>
+        </header>
+
+        <!-- Pricing Cards -->
+        <section class="pricing-section">
+            <div class="pricing-cards">
+                <!-- Card 1 -->
+                <div class="card" onclick="showDetails('landing-page')" data-aos="fade-up">
+                    <div class="card-header">
+                        <h2>Landing Page</h2>
+                        <p class="price">&#8358;85,000 <span>($50)</span></p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Single Page</li>
+                            <li><i class="fas fa-check-circle"></i> Basic SEO</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                            <li><i class="fas fa-check-circle"></i> Lead Capture Form</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn-glitch" onclick="showDetails('landing-page')">
+                            <span class="text">View Details</span><span class="decoration">⇒</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="card e-card playing" onclick="showDetails('personal-portfolio')">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="infotop">
-                    <h2>Personal Portfolio</h2>
-                    <p>Up to 5 pages</p>
-                    <p>SEO</p>
-                    <p>Responsive Design</p>
-                    <p>Personal Branding</p>
-                    <p class="price">&#8358;150,000 ($100)</p>
-                    <button>View Details</button>
+                <!-- Card 2 -->
+                <div class="card" onclick="showDetails('personal-portfolio')" data-aos="fade-up">
+                    <div class="card-header">
+                        <h2>Personal Portfolio</h2>
+                        <p class="price">&#8358;170,000 <span>($100)</span></p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Up to 5 Pages</li>
+                            <li><i class="fas fa-check-circle"></i> SEO Optimization</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                            <li><i class="fas fa-check-circle"></i> Personal Branding</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                    <a class="btn-glitch" onclick="showDetails('personal-portfolio')" data-aos="fade-up">
+                        <span class="text">View Details</span><span class="decoration">⇒</span>
+                    </a>
+                    </div>
                 </div>
-            </div>
-            <div class="card e-card playing" onclick="showDetails('basic-static')">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="infotop">
-                    <h2>Basic Static Website</h2>
-                    <p>Up to 5 pages</p>
-                    <p>Basic SEO</p>
-                    <p>Responsive Design</p>
-                    <p>No Backend</p>
-                    <p class="price">&#8358;200,000 ($130)</p>
-                    <button>View Details</button>
+                <!-- Card 3 -->
+                <div class="card" onclick="showDetails('basic-static')" data-aos="fade-up">
+                    <div class="card-header">
+                        <h2>Basic Static Website</h2>
+                        <p class="price">&#8358;220,000 <span>($130)</span></p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Up to 5 Pages</li>
+                            <li><i class="fas fa-check-circle"></i> Basic SEO</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                            <li><i class="fas fa-check-circle"></i> No Backend</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn-glitch" onclick="showDetails('basic-static')" data-aos="fade-up">
+                            <span class="text">View Details</span><span class="decoration">⇒</span>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="card e-card playing" onclick="showDetails('corporate-portfolio')">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="infotop">
-                    <h2>Corporate Portfolio</h2>
-                    <p>Up to 10 pages</p>
-                    <p>Advanced SEO</p>
-                    <p>Responsive Design</p>
-                    <p>Corporate Branding</p>
-                    <p>Case Studies</p>
-                    <p class="price">&#8358;300,000 ($185)</p>
-                    <button>View Details</button>
+                <!-- Card 4 -->
+                <div class="card" onclick="showDetails('corporate-portfolio')" data-aos="fade-up">
+                    <div class="card-header">
+                        <h2>Corporate Portfolio</h2>
+                        <p class="price">&#8358;340,000 <span>($200)</span></p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Up to 10 Pages</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced SEO</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                            <li><i class="fas fa-check-circle"></i> Corporate Branding</li>
+                            <li><i class="fas fa-check-circle"></i> Case Studies</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                    <a class="btn-glitch" onclick="showDetails('corporate-portfolio')">
+                        <span class="text">View Details</span><span class="decoration">⇒</span>
+                    </a>
+                    </div>
+
                 </div>
-            </div>
-            <div class="card e-card playing" onclick="showDetails('blog-news')">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="infotop">
-                    <h2>Blog/News Site</h2>
-                    <p>Unlimited pages</p>
-                    <p>Advanced SEO</p>
-                    <p>Custom Design</p>
-                    <p>CMS</p>
-                    <p>Newsletter Integration</p>
-                    <p class="price">&#8358;650,000 ($400)</p>
-                    <button>View Details</button>
+                <!-- Card 5 -->
+                <div class="card" onclick="showDetails('blog-news')" data-aos="fade-up">
+                    <div class="card-header">
+                        <h2>Blog/News Site</h2>
+                        <p class="price">&#8358;700,000 <span>($410)</span></p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Unlimited Pages</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced SEO</li>
+                            <li><i class="fas fa-check-circle"></i> Custom Design</li>
+                            <li><i class="fas fa-check-circle"></i> CMS Integration</li>
+                            <li><i class="fas fa-check-circle"></i> Newsletter Integration</li>
+                        </ul>
+                    </div>
+                       <div class="card-footer">
+                    <a class="btn-glitch" onclick="showDetails('blog-news')">
+                        <span class="text">View Details</span><span class="decoration">⇒</span>
+                    </a>
+                    </div>
                 </div>
-            </div>
-            <div class="card e-card playing" onclick="showDetails('corporate-cms')">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="infotop">
-                    <h2>Corporate Website with CMS</h2>
-                    <p>Unlimited pages</p>
-                    <p>Premium SEO</p>
-                    <p>Custom Design</p>
-                    <p>Content Management System</p>
-                    <p>Blog Integration</p>
-                    <p class="price">&#8358;850,000 ($530)</p>
-                    <button>View Details</button>
+                <!-- Card 6 -->
+                <div class="card" onclick="showDetails('corporate-cms')" data-aos="fade-up">
+                    <div class="card-header">
+                        <h2>Corporate Website with CMS</h2>
+                        <p class="price">&#8358;900,000 <span>($530)</span></p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Unlimited Pages</li>
+                            <li><i class="fas fa-check-circle"></i> Premium SEO</li>
+                            <li><i class="fas fa-check-circle"></i> Custom Design</li>
+                            <li><i class="fas fa-check-circle"></i> Content Management System</li>
+                            <li><i class="fas fa-check-circle"></i> Blog Integration</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn-glitch" onclick="showDetails('corporate-cms')">
+                            <span class="text">View Details</span><span class="decoration">⇒</span>
+                        </a>
+                        </div>
                 </div>
-            </div>
-            <div class="card e-card playing" onclick="showDetails('standard-ecommerce')">
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="wave"></div>
-                <div class="infotop">
-                    <h2>Standard E-commerce</h2>
-                    <p>Up to 10 pages</p>
-                    <p>Advanced SEO</p>
-                    <p>E-commerce functionality</p>
-                    <p>Payment Gateway Integration</p>
-                    <p class="price">&#8358;1,000,000 ($630)</p>
-                    <button>View Details</button>
+                <!-- Card 7 -->
+                <div class="card" onclick="showDetails('basic-ecommerce')" data-aos="fade-up">
+                    <div class="card-header">
+                        <h2>Basic E-commerce</h2>
+                        <p class="price">&#8358;700,000 <span>($410)</span></p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Up to 20 Products</li>
+                            <li><i class="fas fa-check-circle"></i> Standard SEO</li>
+                            <li><i class="fas fa-check-circle"></i> Basic E-commerce Functionality</li>
+                            <li><i class="fas fa-check-circle"></i> Payment Gateway Integration</li>
+                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn-glitch" onclick="showDetails('basic-ecommerce')">
+                            <span class="text">View Details</span><span class="decoration">⇒</span>
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Standard E-commerce Card -->
+                <div class="card" onclick="showDetails('standard-ecommerce')" data-aos="fade-up">
+                    <div class="card-header">
+                        <h2>Standard E-commerce</h2>
+                        <p class="price">&#8358;1,200,000 <span>($710)</span></p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Up to 100 Products</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced SEO</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced E-commerce Functionality</li>
+                            <li><i class="fas fa-check-circle"></i> Multiple Payment Gateways</li>
+                            <li><i class="fas fa-check-circle"></i> Inventory Management</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn-glitch" onclick="showDetails('standard-ecommerce')">
+                            <span class="text">View Details</span><span class="decoration">⇒</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Premium E-commerce Card -->
+                <div class="card" onclick="showDetails('premium-ecommerce')" data-aos="fade-up">
+                    <div class="card-header">
+                        <h2>Premium E-commerce</h2>
+                        <p class="price">&#8358;2,000,000 <span>($1,180)</span></p>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Unlimited Products</li>
+                            <li><i class="fas fa-check-circle"></i> Premium SEO</li>
+                            <li><i class="fas fa-check-circle"></i> Custom E-commerce Features</li>
+                            <li><i class="fas fa-check-circle"></i> Multi-Currency Support</li>
+                            <li><i class="fas fa-check-circle"></i> CRM Integration</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn-glitch" onclick="showDetails('premium-ecommerce')">
+                            <span class="text">View Details</span><span class="decoration">⇒</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Add more cards as needed -->
             </div>
-  
-  
-       
-    
-        </div>
+        </section>
     </div>
-    <footer><b>Created by <img src="assets/circle2.png" alt="" id="imgfooter" class="fa-fade"> CyberSage 2024</b></footer>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by <img src="assets/circle2.png" alt="CyberSage Logo" id="footer-logo" class="fa-fade"> <strong>CyberSage 2024</strong></p>
+    </footer>
 
     <!-- Details Modal -->
     <div id="detailsModal" class="modal">
@@ -152,6 +254,16 @@
             <div id="modal-details"></div>
         </div>
     </div>
+
+    <!-- Custom JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="assets/card.js"></script>
+    <script>
+          AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+        });
+    </script>
 </body>
 </html>
