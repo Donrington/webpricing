@@ -21,11 +21,7 @@ body {
     font-family: var(--font-family);
     background: var(--background-gradient);
     color: var(--text-color);
-    overflow-x: hidden;
-    overflow-y: auto;
-    height: 100vh;
-    perspective: 1px;
-    transform-style: preserve-3d;
+  
 }
 
 /* Parallax Background */
@@ -237,31 +233,37 @@ footer {
     width: 20px;
     height: 20px;
     vertical-align: middle;
-}
-
+}/* Modal Styles */
 /* Modal Styles */
+
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 100;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fix it to the viewport */
+    z-index: 100; /* Stack above everything */
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--modal-bg-color);
-    backdrop-filter: blur(5px);
-    overflow: auto;
+    background-color: var(--modal-bg-color); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Optional blur effect */
+    overflow: hidden; /* Prevent background scrolling */
 }
 
 .modal-content {
     background-color: #ffffff;
-    margin: 5% auto;
+    margin: auto; /* Center it horizontally */
     padding: 30px;
     border-radius: var(--border-radius);
     width: 90%;
     max-width: 600px;
-    position: relative;
+    position: absolute;
     color: #333;
+    max-height: 90vh; /* Set a maximum height for content */
+    overflow-y: auto; /* Allow vertical scrolling for content */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Correct centering */
 }
 
 .close-button {
@@ -278,28 +280,12 @@ footer {
     color: var(--secondary-color);
 }
 
-/* Modal Contact Button */
-.modal-contact-button {
-    background: var(--primary-color);
-    color: #fff;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1em;
-    font-family: var(--font-family);
-    border-radius: 30px;
-    cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s;
-    margin-top: 20px;
+/* Prevent background from scrolling */
+body.modal-open {
+    overflow:auto;
 }
 
-.modal-contact-button:hover {
-    background: var(--secondary-color);
-    transform: translateY(-3px);
-}
 
-.modal-contact-button:active {
-    transform: translateY(1px);
-}
 
 /* Responsive Design */
 @media screen and (max-width: 992px) {
