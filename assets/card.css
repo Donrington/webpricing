@@ -684,6 +684,8 @@
     .modal-price {
         font-size: 2rem;
     }
+
+    
         }
 
         @media (max-width: 480px) {
@@ -699,6 +701,10 @@
                 padding: 25px 15px;
                 
             }
+          .card-title{
+        font-size: 1.2rem !important;
+      }
+    
         }
 
 @media (max-width: 768px) {
@@ -720,5 +726,230 @@
     .footer-logo img {
         width: 16px;
         height: 16px;
+    }
+  
+    
+}
+
+
+
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border: 2px solid transparent;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px) scale(0.8);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+}
+
+/* Show button when scrolled */
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+}
+
+/* Futuristic border animation */
+.back-to-top::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: conic-gradient(
+        from 0deg,
+        transparent 0deg,
+        var(--primary-red) 45deg,
+        var(--accent-orange) 90deg,
+        var(--electric-blue) 135deg,
+        transparent 180deg,
+        var(--accent-gold) 225deg,
+        var(--primary-red) 270deg,
+        transparent 315deg,
+        transparent 360deg
+    );
+    border-radius: 50%;
+    animation: rotate-border 3s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover::before {
+    opacity: 1;
+}
+
+/* Inner glow effect */
+.back-to-top::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    background: radial-gradient(circle, rgba(220, 38, 38, 0.2) 0%, transparent 70%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    animation: pulse-inner 2s ease-in-out infinite;
+}
+
+.back-to-top:hover::after {
+    opacity: 1;
+}
+
+/* Arrow icon */
+.back-to-top-icon {
+    font-size: 1.4rem;
+    color: var(--pure-white);
+    transition: all 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    z-index: 1;
+    position: relative;
+}
+
+/* Hover effects */
+.back-to-top:hover {
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: 
+        0 15px 45px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(220, 38, 38, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.2),
+        inset 0 0 30px rgba(255, 255, 255, 0.1);
+}
+
+.back-to-top:hover .back-to-top-icon {
+    transform: translateY(-2px);
+    color: var(--accent-gold);
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.6));
+}
+
+/* Active/Click effect */
+.back-to-top:active {
+    transform: translateY(-3px) scale(1.05);
+    transition: all 0.1s ease;
+}
+
+/* Floating particles effect */
+.back-to-top-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover .back-to-top-particles {
+    opacity: 1;
+}
+
+.back-to-top-particles::before,
+.back-to-top-particles::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: var(--accent-gold);
+    border-radius: 50%;
+    animation: float-particles 2s ease-in-out infinite;
+}
+
+.back-to-top-particles::before {
+    top: 20%;
+    left: 30%;
+    animation-delay: 0s;
+}
+
+.back-to-top-particles::after {
+    top: 70%;
+    right: 25%;
+    animation-delay: 1s;
+    background: var(--electric-blue);
+}
+
+/* Animations */
+@keyframes rotate-border {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes pulse-inner {
+    0%, 100% { 
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% { 
+        opacity: 0.6;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes float-particles {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg);
+        opacity: 0.4;
+    }
+    25% { 
+        transform: translateY(-8px) rotate(90deg);
+        opacity: 0.8;
+    }
+    50% { 
+        transform: translateY(-4px) rotate(180deg);
+        opacity: 1;
+    }
+    75% { 
+        transform: translateY(-12px) rotate(270deg);
+        opacity: 0.6;
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    
+    .back-to-top-icon {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .back-to-top {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .back-to-top-icon {
+        font-size: 1rem;
     }
 }

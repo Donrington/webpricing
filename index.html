@@ -502,6 +502,13 @@
         </div>
     </div>
 
+
+    <!-- Add this before the closing </body> tag -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <div class="back-to-top-particles"></div>
+    <i class="fas fa-chevron-up back-to-top-icon"></i>
+</button>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 <script>
     // Initialize AOS
@@ -890,4 +897,39 @@
     document.addEventListener('DOMContentLoaded', function() {
         updatePrices();
     });
+
+
+    // Back to Top Button Functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTopButton = document.getElementById('backToTop');
+    
+    // Show/hide button based on scroll position
+    function toggleBackToTopButton() {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    }
+    
+    // Smooth scroll to top
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+    
+    // Event listeners
+    window.addEventListener('scroll', toggleBackToTopButton);
+    backToTopButton.addEventListener('click', scrollToTop);
+    
+    // Optional: Add keyboard accessibility
+    backToTopButton.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            scrollToTop();
+        }
+    });
+});
 </script>
