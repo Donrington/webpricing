@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Essential Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Pricing | CyberSage Web Design Services</title>
-
+    
     <!-- SEO Meta Tags -->
     <meta name="description" content="Discover our modern web design pricing options tailored to your business needs. Offering Landing Pages, Portfolios, E-commerce Solutions, and more.">
     <meta name="keywords" content="web design, pricing, landing page, portfolio, e-commerce, responsive design, modern web development, SEO services">
@@ -17,257 +16,877 @@
     <meta property="og:image" content="assets/og-image.png">
     <meta property="og:url" content="https://www.cybersagee.com">
     <meta property="og:type" content="website">
-
-    <!-- Favicon -->
-    <link rel="icon" href="assets/circle2.png" type="image/png">
-
-    <!-- Google Fonts -->
-      <!-- Google Fonts -->
-      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/card.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Epilogue:ital,wght@0,100..900;1,100&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Rosario:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    
 </head>
+
 <body>
+    <div class="bg-animation">
+        <div class="floating-orb orb-1"></div>
+        <div class="floating-orb orb-2"></div>
+        <div class="floating-orb orb-3"></div>
+    </div>
 
- 
-    <!-- Container -->
-    <div class="container">
-
-            <!-- Details Modal -->
-
-        <!-- Header -->
-        <header>
-            <img src="assets/circle2.png" alt="CyberSage Logo" id="logo" class="fa-fade">
-            <h1>Website Pricing</h1>
-        </header>
-
-        <!-- Pricing Cards -->
-        <section class="pricing-section">
-            <div class="pricing-cards">
-                <!-- Card 1 -->
-                <div class="card" onclick="showDetails('landing-page')" data-aos="fade-up">
-                    <div class="card-header">
-                        <h2>Landing Page</h2>
-                        <p class="price">&#8358;85,000 <span>($50)</span></p>
+    <header class="header">
+        <div class="logo">
+            <img src="assets/circle2.png" alt="">
+        </div>
+        <h1 class="main-title">Website Pricing</h1>
+        <p class="subtitle">Transform your digital presence with our cutting-edge web solutions designed for the modern business landscape</p>
+        
+        <div class="currency-toggle">
+            <div class="toggle-container">
+                <div class="toggle-switch">
+                    <div class="toggle-option active" data-currency="ngn">
+                        <i class="fas fa-naira-sign"></i> NGN
                     </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Single Page</li>
-                            <li><i class="fas fa-check-circle"></i> Basic SEO</li>
-                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
-                            <li><i class="fas fa-check-circle"></i> Lead Capture Form</li>
-                        </ul>
+                    <div class="toggle-option" data-currency="usd">
+                        <i class="fas fa-dollar-sign"></i> USD
                     </div>
-                    <div class="card-footer">
-                        <a class="btn-glitch" onclick="showDetails('landing-page')">
-                            <span class="text">View Details</span><span class="decoration">⇒</span>
-                        </a>
-                    </div>
+                    <div class="toggle-slider"></div>
                 </div>
-                <!-- Card 2 -->
-                <div class="card" onclick="showDetails('personal-portfolio')" data-aos="fade-up">
-                    <div class="card-header">
-                        <h2>Personal Portfolio</h2>
-                        <p class="price">&#8358;170,000 <span>($100)</span></p>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Up to 5 Pages</li>
-                            <li><i class="fas fa-check-circle"></i> SEO Optimization</li>
-                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
-                            <li><i class="fas fa-check-circle"></i> Personal Branding</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                    <a class="btn-glitch" onclick="showDetails('personal-portfolio')" data-aos="fade-up">
-                        <span class="text">View Details</span><span class="decoration">⇒</span>
-                    </a>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="card" onclick="showDetails('basic-static')" data-aos="fade-up">
-                    <div class="card-header">
-                        <h2>Basic Static Website</h2>
-                        <p class="price">&#8358;220,000 <span>($130)</span></p>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Up to 5 Pages</li>
-                            <li><i class="fas fa-check-circle"></i> Basic SEO</li>
-                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
-                            <li><i class="fas fa-check-circle"></i> No Backend</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn-glitch" onclick="showDetails('basic-static')" data-aos="fade-up">
-                            <span class="text">View Details</span><span class="decoration">⇒</span>
-                        </a>
-                    </div>
-                </div>
-                <!-- Card 4 -->
-                <div class="card" onclick="showDetails('corporate-portfolio')" data-aos="fade-up">
-                    <div class="card-header">
-                        <h2>Corporate Portfolio</h2>
-                        <p class="price">&#8358;340,000 <span>($200)</span></p>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Up to 10 Pages</li>
-                            <li><i class="fas fa-check-circle"></i> Advanced SEO</li>
-                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
-                            <li><i class="fas fa-check-circle"></i> Corporate Branding</li>
-                            <li><i class="fas fa-check-circle"></i> Case Studies</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                    <a class="btn-glitch" onclick="showDetails('corporate-portfolio')">
-                        <span class="text">View Details</span><span class="decoration">⇒</span>
-                    </a>
-                    </div>
-
-                </div>
-                <!-- Card 5 -->
-                <div class="card" onclick="showDetails('blog-news')" data-aos="fade-up">
-                    <div class="card-header">
-                        <h2>Blog/News Site</h2>
-                        <p class="price">&#8358;700,000 <span>($410)</span></p>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Unlimited Pages</li>
-                            <li><i class="fas fa-check-circle"></i> Advanced SEO</li>
-                            <li><i class="fas fa-check-circle"></i> Custom Design</li>
-                            <li><i class="fas fa-check-circle"></i> CMS Integration</li>
-                            <li><i class="fas fa-check-circle"></i> Newsletter Integration</li>
-                        </ul>
-                    </div>
-                       <div class="card-footer">
-                    <a class="btn-glitch" onclick="showDetails('blog-news')">
-                        <span class="text">View Details</span><span class="decoration">⇒</span>
-                    </a>
-                    </div>
-                </div>
-                <!-- Card 6 -->
-                <div class="card" onclick="showDetails('corporate-cms')" data-aos="fade-up">
-                    <div class="card-header">
-                        <h2>Corporate Website with CMS</h2>
-                        <p class="price">&#8358;900,000 <span>($530)</span></p>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Unlimited Pages</li>
-                            <li><i class="fas fa-check-circle"></i> Premium SEO</li>
-                            <li><i class="fas fa-check-circle"></i> Custom Design</li>
-                            <li><i class="fas fa-check-circle"></i> Content Management System</li>
-                            <li><i class="fas fa-check-circle"></i> Blog Integration</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn-glitch" onclick="showDetails('corporate-cms')">
-                            <span class="text">View Details</span><span class="decoration">⇒</span>
-                        </a>
-                        </div>
-                </div>
-                <!-- Card 7 -->
-                <div class="card" onclick="showDetails('basic-ecommerce')" data-aos="fade-up">
-                    <div class="card-header">
-                        <h2>Basic E-commerce</h2>
-                        <p class="price">&#8358;700,000 <span>($410)</span></p>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Up to 20 Products</li>
-                            <li><i class="fas fa-check-circle"></i> Standard SEO</li>
-                            <li><i class="fas fa-check-circle"></i> Basic E-commerce Functionality</li>
-                            <li><i class="fas fa-check-circle"></i> Payment Gateway Integration</li>
-                            <li><i class="fas fa-check-circle"></i> Responsive Design</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn-glitch" onclick="showDetails('basic-ecommerce')">
-                            <span class="text">View Details</span><span class="decoration">⇒</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Standard E-commerce Card -->
-                <div class="card" onclick="showDetails('standard-ecommerce')" data-aos="fade-up">
-                    <div class="card-header">
-                        <h2>Standard E-commerce</h2>
-                        <p class="price">&#8358;1,200,000 <span>($710)</span></p>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Up to 100 Products</li>
-                            <li><i class="fas fa-check-circle"></i> Advanced SEO</li>
-                            <li><i class="fas fa-check-circle"></i> Advanced E-commerce Functionality</li>
-                            <li><i class="fas fa-check-circle"></i> Multiple Payment Gateways</li>
-                            <li><i class="fas fa-check-circle"></i> Inventory Management</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn-glitch" onclick="showDetails('standard-ecommerce')">
-                            <span class="text">View Details</span><span class="decoration">⇒</span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Premium E-commerce Card -->
-                <div class="card" onclick="showDetails('premium-ecommerce')" data-aos="fade-up">
-                    <div class="card-header">
-                        <h2>Premium E-commerce</h2>
-                        <p class="price">&#8358;2,000,000 <span>($1,180)</span></p>
-                    </div>
-                    <div class="card-body">
-                        <ul>
-                            <li><i class="fas fa-check-circle"></i> Unlimited Products</li>
-                            <li><i class="fas fa-check-circle"></i> Premium SEO</li>
-                            <li><i class="fas fa-check-circle"></i> Custom E-commerce Features</li>
-                            <li><i class="fas fa-check-circle"></i> Multi-Currency Support</li>
-                            <li><i class="fas fa-check-circle"></i> CRM Integration</li>
-                        </ul>
-                    </div>
-                    <div class="card-footer">
-                        <a class="btn-glitch" onclick="showDetails('premium-ecommerce')">
-                            <span class="text">View Details</span><span class="decoration">⇒</span>
-                        </a>
-                    </div>
-                </div>
-
-   
-                <!-- Add more cards as needed -->
             </div>
-         
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="pricing-grid">
+            <!-- Landing Page -->
+            <div class="pricing-card" data-package="landing-page" data-aos="fade-up">
+                <div class="card-header">
+                    <h2 class="card-title">Landing Page</h2>
+                    <div class="card-price">
+                        <span class="currency-symbol">₦</span>
+                        <span class="price-value" data-ngn="85,000" data-usd="50">85,000</span>
+                    </div>
+                    <p class="card-description">Perfect for startups and small businesses looking to make a powerful first impression</p>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <i class="fas fa-rocket feature-icon"></i>
+                        <span class="feature-text">Single high-converting page with <span class="feature-highlight">strategic design</span></span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-search feature-icon"></i>
+                        <span class="feature-text">Basic SEO optimization for local search visibility</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-mobile-alt feature-icon"></i>
+                        <span class="feature-text">Fully responsive design across all devices</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-envelope feature-icon"></i>
+                        <span class="feature-text">Lead capture form with <span class="feature-highlight">email integration</span></span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-chart-line feature-icon"></i>
+                        <span class="feature-text">Basic analytics setup and tracking</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-shipping-fast feature-icon"></i>
+                        <span class="feature-text">5-7 day delivery timeline</span>
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <button class="cta-button" onclick="showDetails('landing-page')">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Personal Portfolio -->
+            <div class="pricing-card" data-package="personal-portfolio" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-header">
+                    <h2 class="card-title">Personal Portfolio</h2>
+                    <div class="card-price">
+                        <span class="currency-symbol">₦</span>
+                        <span class="price-value" data-ngn="170,000" data-usd="100">170,000</span>
+                    </div>
+                    <p class="card-description">Showcase your talents and expertise with a stunning professional portfolio</p>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <i class="fas fa-layer-group feature-icon"></i>
+                        <span class="feature-text">Up to 5 beautifully crafted pages</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-search-dollar feature-icon"></i>
+                        <span class="feature-text">Advanced SEO optimization for better rankings</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-palette feature-icon"></i>
+                        <span class="feature-text">Custom personal branding and <span class="feature-highlight">visual identity</span></span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-images feature-icon"></i>
+                        <span class="feature-text">Interactive portfolio gallery with lightbox</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-address-card feature-icon"></i>
+                        <span class="feature-text">Contact form with spam protection</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-share-alt feature-icon"></i>
+                        <span class="feature-text">Social media integration</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-clock feature-icon"></i>
+                        <span class="feature-text">7-10 day delivery timeline</span>
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <button class="cta-button" onclick="showDetails('personal-portfolio')">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Basic Static Website -->
+            <div class="pricing-card" data-package="basic-static" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-header">
+                    <h2 class="card-title">Basic Static Website</h2>
+                    <div class="card-price">
+                        <span class="currency-symbol">₦</span>
+                        <span class="price-value" data-ngn="220,000" data-usd="130">220,000</span>
+                    </div>
+                    <p class="card-description">Essential web presence for small businesses with core functionality</p>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <i class="fas fa-sitemap feature-icon"></i>
+                        <span class="feature-text">Up to 5 professionally designed pages</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-search feature-icon"></i>
+                        <span class="feature-text">Basic SEO with meta tags and optimization</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-mobile feature-icon"></i>
+                        <span class="feature-text">Mobile-first responsive design</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-server feature-icon"></i>
+                        <span class="feature-text">Static hosting ready (no backend complexity)</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-bolt feature-icon"></i>
+                        <span class="feature-text"><span class="feature-highlight">Lightning-fast</span> loading speeds</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <span class="feature-text">SSL certificate and security headers</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-calendar feature-icon"></i>
+                        <span class="feature-text">10-12 day delivery timeline</span>
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <button class="cta-button" onclick="showDetails('basic-static')">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Corporate Portfolio -->
+            <div class="pricing-card" data-package="corporate-portfolio" data-aos="fade-up" data-aos-delay="300">
+                <div class="popular-badge">Most Popular</div>
+                <div class="card-header">
+                    <h2 class="card-title">Corporate Portfolio</h2>
+                    <div class="card-price">
+                        <span class="currency-symbol">₦</span>
+                        <span class="price-value" data-ngn="340,000" data-usd="200">340,000</span>
+                    </div>
+                    <p class="card-description">Professional corporate presence with comprehensive business showcase</p>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <i class="fas fa-building feature-icon"></i>
+                        <span class="feature-text">Up to 10 enterprise-grade pages</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-rocket feature-icon"></i>
+                        <span class="feature-text">Advanced SEO with <span class="feature-highlight">keyword research</span></span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-award feature-icon"></i>
+                        <span class="feature-text">Professional corporate branding package</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-briefcase feature-icon"></i>
+                        <span class="feature-text">Detailed case studies with success metrics</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-users feature-icon"></i>
+                        <span class="feature-text">Team profiles and company history</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-chart-bar feature-icon"></i>
+                        <span class="feature-text">Advanced analytics and conversion tracking</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-headset feature-icon"></i>
+                        <span class="feature-text">Priority support and consultation</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-calendar-alt feature-icon"></i>
+                        <span class="feature-text">12-15 day delivery timeline</span>
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <button class="cta-button" onclick="showDetails('corporate-portfolio')">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Blog/News Site -->
+            <div class="pricing-card" data-package="blog-news" data-aos="fade-up" data-aos-delay="400">
+                <div class="card-header">
+                    <h2 class="card-title">Blog/News Site</h2>
+                    <div class="card-price">
+                        <span class="currency-symbol">₦</span>
+                        <span class="price-value" data-ngn="700,000" data-usd="410">700,000</span>
+                    </div>
+                    <p class="card-description">Dynamic content platform for publishers and content creators</p>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <i class="fas fa-infinity feature-icon"></i>
+                        <span class="feature-text">Unlimited pages with dynamic content management</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-search-plus feature-icon"></i>
+                        <span class="feature-text">Advanced SEO with <span class="feature-highlight">content optimization</span></span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-paint-brush feature-icon"></i>
+                        <span class="feature-text">Custom design tailored to your brand voice</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-cogs feature-icon"></i>
+                        <span class="feature-text">Full CMS integration </span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-newspaper feature-icon"></i>
+                        <span class="feature-text">Newsletter integration with automation</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-comments feature-icon"></i>
+                        <span class="feature-text">Comment system and social sharing</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-rss feature-icon"></i>
+                        <span class="feature-text">RSS feeds and content syndication</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-clock feature-icon"></i>
+                        <span class="feature-text">15-20 day delivery timeline</span>
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <button class="cta-button" onclick="showDetails('blog-news')">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Corporate CMS -->
+            <div class="pricing-card" data-package="corporate-cms" data-aos="fade-up" data-aos-delay="500">
+                <div class="card-header">
+                    <h2 class="card-title">Corporate Website with CMS</h2>
+                    <div class="card-price">
+                        <span class="currency-symbol">₦</span>
+                        <span class="price-value" data-ngn="900,000" data-usd="530">900,000</span>
+                    </div>
+                    <p class="card-description">Enterprise-level website with full content management capabilities</p>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <i class="fas fa-expand-arrows-alt feature-icon"></i>
+                        <span class="feature-text">Unlimited pages with scalable architecture</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-crown feature-icon"></i>
+                        <span class="feature-text">Premium SEO with <span class="feature-highlight">enterprise tools</span></span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-magic feature-icon"></i>
+                        <span class="feature-text">Fully custom design and user experience</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-database feature-icon"></i>
+                        <span class="feature-text">Advanced content management system</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-blog feature-icon"></i>
+                        <span class="feature-text">Integrated blog with editorial workflow</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-user-shield feature-icon"></i>
+                        <span class="feature-text">Multi-user roles and permissions</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-cloud feature-icon"></i>
+                        <span class="feature-text">Cloud hosting and backup solutions</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-calendar-week feature-icon"></i>
+                        <span class="feature-text">20-25 day delivery timeline</span>
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <button class="cta-button" onclick="showDetails('corporate-cms')">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Basic E-commerce -->
+            <div class="pricing-card" data-package="basic-ecommerce" data-aos="fade-up" data-aos-delay="600">
+                <div class="card-header">
+                    <h2 class="card-title">Basic E-commerce</h2>
+                    <div class="card-price">
+                        <span class="currency-symbol">₦</span>
+                        <span class="price-value" data-ngn="700,000" data-usd="410">700,000</span>
+                    </div>
+                    <p class="card-description">Start selling online with essential e-commerce functionality</p>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <i class="fas fa-shopping-bag feature-icon"></i>
+                        <span class="feature-text">Up to 20 products with detailed listings</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-search-dollar feature-icon"></i>
+                        <span class="feature-text">E-commerce SEO optimization</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-shopping-cart feature-icon"></i>
+                        <span class="feature-text">Complete shopping cart functionality</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-credit-card feature-icon"></i>
+                        <span class="feature-text">Payment gateway integration <span class="feature-highlight">(Paystack/Stripe)</span></span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-mobile-alt feature-icon"></i>
+                        <span class="feature-text">Mobile-optimized shopping experience</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-truck feature-icon"></i>
+                        <span class="feature-text">Basic shipping and tax calculations</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-chart-line feature-icon"></i>
+                        <span class="feature-text">Sales analytics and reporting</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-calendar-alt feature-icon"></i>
+                        <span class="feature-text">18-22 day delivery timeline</span>
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <button class="cta-button" onclick="showDetails('basic-ecommerce')">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Standard E-commerce -->
+            <div class="pricing-card" data-package="standard-ecommerce" data-aos="fade-up" data-aos-delay="700">
+                <div class="card-header">
+                    <h2 class="card-title">Standard E-commerce</h2>
+                    <div class="card-price">
+                        <span class="currency-symbol">₦</span>
+                        <span class="price-value" data-ngn="1,200,000" data-usd="710">1,200,000</span>
+                    </div>
+                    <p class="card-description">Comprehensive online store with advanced selling features</p>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <i class="fas fa-boxes feature-icon"></i>
+                        <span class="feature-text">Up to 100 products with categories</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-rocket feature-icon"></i>
+                        <span class="feature-text">Advanced SEO for product visibility</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-store feature-icon"></i>
+                        <span class="feature-text">Advanced e-commerce functionality</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-credit-card feature-icon"></i>
+                        <span class="feature-text">Multiple payment gateways integration</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-warehouse feature-icon"></i>
+                        <span class="feature-text">Inventory management system</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-users feature-icon"></i>
+                        <span class="feature-text">Customer accounts and order history</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-percentage feature-icon"></i>
+                        <span class="feature-text">Discount codes and promotions</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-calendar-check feature-icon"></i>
+                        <span class="feature-text">25-30 day delivery timeline</span>
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <button class="cta-button" onclick="showDetails('standard-ecommerce')">Get Started</button>
+                </div>
+            </div>
+
+            <!-- Premium E-commerce -->
+            <div class="pricing-card" data-package="premium-ecommerce" data-aos="fade-up" data-aos-delay="800">
+                <div class="card-header">
+                    <h2 class="card-title">Premium E-commerce</h2>
+                    <div class="card-price">
+                        <span class="currency-symbol">₦</span>
+                        <span class="price-value" data-ngn="2,000,000" data-usd="1,180">2,000,000</span>
+                    </div>
+                    <p class="card-description">Enterprise-grade e-commerce solution with unlimited potential</p>
+                </div>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <i class="fas fa-infinity feature-icon"></i>
+                        <span class="feature-text">Unlimited products and categories</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-crown feature-icon"></i>
+                        <span class="feature-text">Premium SEO with <span class="feature-highlight">AI optimization</span></span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-cog feature-icon"></i>
+                        <span class="feature-text">Custom e-commerce features development</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-globe feature-icon"></i>
+                        <span class="feature-text">Multi-currency and language support</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-handshake feature-icon"></i>
+                        <span class="feature-text">CRM integration and automation</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-chart-bar feature-icon"></i>
+                        <span class="feature-text">Advanced analytics and business intelligence</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <span class="feature-text">Enterprise security and compliance</span>
+                    </li>
+                    <li class="feature-item">
+                        <i class="fas fa-calendar-plus feature-icon"></i>
+                        <span class="feature-text">30-40 day delivery timeline</span>
+                    </li>
+                </ul>
+                <div class="card-footer">
+                    <button class="cta-button" onclick="showDetails('premium-ecommerce')">Get Started</button>
+                </div>
+            </div>
         </section>
     </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>Created by <img src="assets/circle2.png" alt="CyberSage Logo" id="footer-logo" class="fa-fade"> <strong>CyberSage 2024</strong></p>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/circle2.png" alt="">
+            </div>
+            <span>Created by <strong>CyberSage</strong> 2024</span>
+        </div>
     </footer>
 
-
+    <!-- Modal -->
     <div id="detailsModal" class="modal">
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">&times;</span>
             <div id="modal-details"></div>
         </div>
     </div>
-    
 
-    <!-- Custom JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="assets/card.js"></script>
-    <script>
-          AOS.init({
-            duration: 800,
-            easing: 'ease-in-out',
-            once: true,
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+    });
+
+    // Currency toggle functionality
+    const toggleOptions = document.querySelectorAll('.toggle-option');
+    const toggleSlider = document.querySelector('.toggle-slider');
+    const priceValues = document.querySelectorAll('.price-value');
+    const currencySymbols = document.querySelectorAll('.currency-symbol');
+
+    let currentCurrency = 'ngn';
+
+    toggleOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            const currency = option.dataset.currency;
+            
+            // Update active states
+            toggleOptions.forEach(opt => opt.classList.remove('active'));
+            option.classList.add('active');
+            
+            // Move slider
+            if (currency === 'usd') {
+                toggleSlider.classList.add('usd');
+            } else {
+                toggleSlider.classList.remove('usd');
+            }
+            
+            // Update prices and symbols
+            currentCurrency = currency;
+            updatePrices();
         });
-    </script>
-</body>
-</html>
+    });
+
+    function updatePrices() {
+        priceValues.forEach(priceElement => {
+            const ngnPrice = priceElement.dataset.ngn;
+            const usdPrice = priceElement.dataset.usd;
+            priceElement.textContent = currentCurrency === 'ngn' ? ngnPrice : usdPrice;
+        });
+
+        currencySymbols.forEach(symbol => {
+            symbol.textContent = currentCurrency === 'ngn' ? '₦' : '$';
+        });
+    }
+
+    // Package details data
+    const packageDetails = {
+        'landing-page': {
+            title: 'Landing Page',
+            price: { ngn: '85,000', usd: '50' },
+            description: 'Perfect for startups and small businesses looking to make a powerful first impression with a high-converting single page.',
+            features: [
+                'Strategic single-page design focused on conversion',
+                'Mobile-first responsive design',
+                'Basic SEO optimization with meta tags',
+                'Lead capture form with email integration',
+                'Basic analytics setup (Google Analytics)',
+                'Contact form with spam protection',
+                'Social media integration',
+                'SSL certificate included',
+                '5-7 day delivery timeline',
+                '30 days post-launch support'
+            ],
+            deliverables: [
+                'Fully functional landing page',
+                'Source code and assets',
+                'Basic documentation',
+                'Deployment assistance'
+            ]
+        },
+        'personal-portfolio': {
+            title: 'Personal Portfolio',
+            price: { ngn: '170,000', usd: '100' },
+            description: 'Showcase your talents and expertise with a stunning professional portfolio that sets you apart from the competition.',
+            features: [
+                'Up to 5 beautifully crafted pages',
+                'Custom personal branding and visual identity',
+                'Interactive portfolio gallery with lightbox',
+                'Advanced SEO optimization',
+                'Contact form with spam protection',
+                'Social media integration',
+                'Blog section setup',
+                'Resume/CV download feature',
+                'Testimonials section',
+                '7-10 day delivery timeline',
+                '45 days post-launch support'
+            ],
+            deliverables: [
+                'Complete portfolio website',
+                'Content management guide',
+                'SEO optimization report',
+                'Performance optimization'
+            ]
+        },
+        'basic-static': {
+            title: 'Basic Static Website',
+            price: { ngn: '220,000', usd: '130' },
+            description: 'Essential web presence for small businesses with core functionality and lightning-fast performance.',
+            features: [
+                'Up to 5 professionally designed pages',
+                'Mobile-first responsive design',
+                'Basic SEO with meta tags and optimization',
+                'Contact form with email notifications',
+                'Static hosting ready (no backend complexity)',
+                'Lightning-fast loading speeds',
+                'SSL certificate and security headers',
+                'Basic analytics integration',
+                'Social media links',
+                '10-12 day delivery timeline',
+                '60 days post-launch support'
+            ],
+            deliverables: [
+                'Complete static website',
+                'Hosting setup guide',
+                'Basic maintenance documentation',
+                'Performance optimization report'
+            ]
+        },
+        'corporate-portfolio': {
+            title: 'Corporate Portfolio',
+            price: { ngn: '340,000', usd: '200' },
+            description: 'Professional corporate presence with comprehensive business showcase designed to build trust and credibility.',
+            features: [
+                'Up to 10 enterprise-grade pages',
+                'Advanced SEO with keyword research',
+                'Professional corporate branding package',
+                'Detailed case studies with success metrics',
+                'Team profiles and company history',
+                'Advanced analytics and conversion tracking',
+                'Newsletter integration',
+                'Multi-language support preparation',
+                'Priority support and consultation',
+                'Custom contact forms',
+                '12-15 day delivery timeline',
+                '90 days post-launch support'
+            ],
+            deliverables: [
+                'Complete corporate website',
+                'Brand guidelines document',
+                'SEO strategy report',
+                'Analytics setup and training',
+                'Content management guide'
+            ]
+        },
+        'blog-news': {
+            title: 'Blog/News Site',
+            price: { ngn: '700,000', usd: '410' },
+            description: 'Dynamic content platform for publishers and content creators with advanced publishing capabilities.',
+            features: [
+                'Unlimited pages with dynamic content management',
+                'Advanced SEO with content optimization',
+                'Custom design tailored to your brand voice',
+                'Full CMS integration ',
+                'Newsletter integration with automation',
+                'Comment system and social sharing',
+                'RSS feeds and content syndication',
+                'Author profiles and multi-author support',
+                'Advanced search functionality',
+                'Category and tag management',
+                'Editorial workflow system',
+                '15-20 day delivery timeline',
+                '120 days post-launch support'
+            ],
+            deliverables: [
+                'Complete blog/news platform',
+                'CMS training and documentation',
+                'Content strategy guide',
+                'SEO optimization toolkit',
+                'Social media integration setup'
+            ]
+        },
+        'corporate-cms': {
+            title: 'Corporate Website with CMS',
+            price: { ngn: '900,000', usd: '530' },
+            description: 'Enterprise-level website with full content management capabilities for large organizations.',
+            features: [
+                'Unlimited pages with scalable architecture',
+                'Premium SEO with enterprise tools',
+                'Fully custom design and user experience',
+                'Advanced content management system',
+                'Integrated blog with editorial workflow',
+                'Multi-user roles and permissions',
+                'Cloud hosting and backup solutions',
+                'Advanced security features',
+                'Performance monitoring',
+                'API integration capabilities',
+                'Custom plugin development',
+                '20-25 day delivery timeline',
+                '180 days post-launch support'
+            ],
+            deliverables: [
+                'Enterprise-grade website',
+                'Comprehensive CMS training',
+                'Security audit report',
+                'Performance optimization guide',
+                'Technical documentation',
+                'Backup and recovery procedures'
+            ]
+        },
+        'basic-ecommerce': {
+            title: 'Basic E-commerce',
+            price: { ngn: '700,000', usd: '410' },
+            description: 'Start selling online with essential e-commerce functionality and secure payment processing.',
+            features: [
+                'Up to 20 products with detailed listings',
+                'E-commerce SEO optimization',
+                'Complete shopping cart functionality',
+                'Payment gateway integration (Paystack/Stripe)',
+                'Mobile-optimized shopping experience',
+                'Basic shipping and tax calculations',
+                'Sales analytics and reporting',
+                'Customer account system',
+                'Order management dashboard',
+                'Email notifications',
+                'Basic inventory tracking',
+                '18-22 day delivery timeline',
+                '120 days post-launch support'
+            ],
+            deliverables: [
+                'Complete e-commerce website',
+                'Payment gateway setup',
+                'Product management guide',
+                'Order fulfillment documentation',
+                'Basic marketing tools setup'
+            ]
+        },
+        'standard-ecommerce': {
+            title: 'Standard E-commerce',
+            price: { ngn: '1,200,000', usd: '710' },
+            description: 'Comprehensive online store with advanced selling features and marketing capabilities.',
+            features: [
+                'Up to 100 products with categories',
+                'Advanced SEO for product visibility',
+                'Advanced e-commerce functionality',
+                'Multiple payment gateways integration',
+                'Inventory management system',
+                'Customer accounts and order history',
+                'Discount codes and promotions',
+                'Advanced shipping options',
+                'Email marketing integration',
+                'Product reviews and ratings',
+                'Wishlist functionality',
+                'Advanced analytics dashboard',
+                '25-30 day delivery timeline',
+                '180 days post-launch support'
+            ],
+            deliverables: [
+                'Advanced e-commerce platform',
+                'Inventory management training',
+                'Marketing automation setup',
+                'Advanced analytics configuration',
+                'Customer service tools',
+                'Growth strategy consultation'
+            ]
+        },
+        'premium-ecommerce': {
+            title: 'Premium E-commerce',
+            price: { ngn: '2,000,000', usd: '1,180' },
+            description: 'Enterprise-grade e-commerce solution with unlimited potential and advanced business intelligence.',
+            features: [
+                'Unlimited products and categories',
+                'Premium SEO with AI optimization',
+                'Custom e-commerce features development',
+                'Multi-currency and language support',
+                'CRM integration and automation',
+                'Advanced analytics and business intelligence',
+                'Enterprise security and compliance',
+                'Custom API development',
+                'Advanced marketing automation',
+                'Multi-vendor marketplace capability',
+                'Advanced reporting and insights',
+                'Priority 24/7 support',
+                '30-40 day delivery timeline',
+                '365 days post-launch support'
+            ],
+            deliverables: [
+                'Enterprise e-commerce solution',
+                'Custom feature development',
+                'Business intelligence dashboard',
+                'Advanced security audit',
+                'Performance optimization',
+                'Dedicated account management',
+                'Ongoing strategic consultation'
+            ]
+        }
+    };
+
+    function showDetails(packageType) {
+        const details = packageDetails[packageType];
+        if (!details) return;
+
+        const price = currentCurrency === 'ngn' ? details.price.ngn : details.price.usd;
+        const symbol = currentCurrency === 'ngn' ? '₦' : '$';
+
+        const modalContent = `
+            <h2 class="modal-title">${details.title}</h2>
+            <div class="modal-price">${symbol}${price}</div>
+            <p style="margin-bottom: 30px; line-height: 1.6; color: #94a3b8;">${details.description}</p>
+            
+            <div class="modal-features">
+                <h3 style="margin-bottom: 20px; color: #f59e0b; font-family: var(--font-accent);">What's Included:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    ${details.features.map(feature => `
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fas fa-check-circle" style="color: #f59e0b; margin-top: 3px; flex-shrink: 0;"></i>
+                            <span>${feature}</span>
+                        </li>
+                    `).join('')}
+                </ul>
+            </div>
+
+            <div style="margin-top: 30px;">
+                <h3 style="margin-bottom: 20px; color: #f59e0b; font-family: var(--font-accent);">Deliverables:</h3>
+                <ul style="list-style: none; padding: 0;">
+                    ${details.deliverables.map(deliverable => `
+                        <li style="margin-bottom: 12px; display: flex; align-items: flex-start; gap: 10px;">
+                            <i class="fas fa-gift" style="color: #dc2626; margin-top: 3px; flex-shrink: 0;"></i>
+                            <span>${deliverable}</span>
+                        </li>
+                    `).join('')}
+                </ul>
+            </div>
+
+            <button class="modal-contact-button" onclick="contactUs('${packageType}')">
+                Get Started Today
+            </button>
+        `;
+
+        // Check if modal elements exist before trying to use them
+        const modalDetails = document.getElementById('modal-details');
+        const detailsModal = document.getElementById('detailsModal');
+        
+        if (modalDetails && detailsModal) {
+            modalDetails.innerHTML = modalContent;
+            detailsModal.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        } else {
+            console.warn('Modal elements not found. Make sure you have elements with IDs "modal-details" and "detailsModal" in your HTML.');
+        }
+    }
+
+    function closeModal() {
+        const detailsModal = document.getElementById('detailsModal');
+        if (detailsModal) {
+            detailsModal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+    }
+
+    function contactUs(packageType) {
+        const packageData = packageDetails[packageType];
+        if (!packageData) return;
+        
+        // You can customize this to open a contact form, redirect to a contact page, or start a chat
+        const message = `Hi! I'm interested in the ${packageData.title} package. Can we discuss the details?`;
+        const encodedMessage = encodeURIComponent(message);
+        
+        // Example: WhatsApp integration (replace with your number)
+        // window.open(`https://wa.me/YOUR_WHATSAPP_NUMBER?text=${encodedMessage}`, '_blank');
+        
+        // Example: Email integration
+        window.location.href = `mailto:info@cybersagee.com?subject=Interest in ${packageData.title}&body=${encodedMessage}`;
+    }
+
+    // Close modal when clicking outside
+    window.onclick = function(event) {
+        const modal = document.getElementById('detailsModal');
+        if (event.target === modal) {
+            closeModal();
+        }
+    }
+
+    // Close modal with Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    });
+
+    // Initialize prices on page load
+    document.addEventListener('DOMContentLoaded', function() {
+        updatePrices();
+    });
+</script>
